@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Square One Ventures LLC`,
+    description: `We design one-of-a-kind, eco-friendly, reusable and sustainable products. From sandwich bags, to snack bags, simplicity, safety and superior durability are featured in high quality materials and craftsmanship.`,
+    author: `Tom Raley`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,12 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/dist/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/favicon.jpg"
       },
     },
     {

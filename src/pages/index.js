@@ -15,7 +15,7 @@ class IndexPage extends Component {
     return (
   <Layout>
     <Helmet>
-          <script src="//assets.pinterest.com/js/pinit.js" async="" data-pin-hover="true" ></script>
+          <script src="//assets.pinterest.com/js/pinit.js" async=""  ></script>
     </Helmet>
     <SEO title="Home" />
     <Navigation />
@@ -28,3 +28,4 @@ class IndexPage extends Component {
 }
 
 export default IndexPage
+

@@ -116,8 +116,7 @@ body {
 }
 
 .about-text a {
-    position: absolute;
-    top: 0;
+    margin-top: auto;
 }
 
 
@@ -157,6 +156,11 @@ body {
         width: 75%;
         height: auto;
     }
+
+    .about-text a {
+    margin-left: auto;
+    margin-right: 3em;
+  }
 }
 
 /*Footer Styles*/

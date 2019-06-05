@@ -31,9 +31,6 @@ class JumbotronMiddle extends Component {
             <p>We design one-of-a-kind, sustainable products. Simplicity, safety and superior durability are featured in high quality materials and craftsmanship. <br /><br/>"U are one" that will make a difference today. Join us on our mission to reuse.<br /><br />Meet us at Square One.</p>
           </div>
         </div>
-        <div style={{paddingRight: '4em'}} className="pinterest-button-desktop">
-          
-        </div>
       </ Jumbotron>
     )
   }

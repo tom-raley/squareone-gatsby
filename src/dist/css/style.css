@@ -118,6 +118,10 @@ body {
     min-width: 49.5px;
 }
 
+#pinterest-button > a {
+  width: 49.5px !important;
+}
+
 
 /*Mobile Styles*/
 @media only screen and (max-width: 600px) {

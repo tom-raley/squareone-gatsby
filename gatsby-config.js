@@ -44,6 +44,14 @@ module.exports = {
          // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true,
+        whitelist: ['navbar', 'navbar-expand-lg', 'navbar-light', 'navbar-brand', 'btn-square-one', 'btn', 'btn-primary', 'jumbotron-middle', 'jumbotron', 'jumbotron-fluid', 'about-text', 'about-img', 'aos-init', 'aos-animate', 'desktop-mission', 'mobile-footer'],
+      },
+    },
         // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

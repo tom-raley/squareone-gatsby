@@ -25,7 +25,15 @@ class IndexPage extends Component {
     <SEO title="Home" />
     <Navigation logo={images.logoTransparent} />
     <JumbotronTop oceanLandscape={images.oceanLandscape} />
-    <JumbotronMiddle diagonalLogo={images.diagonalLogo} />
+    <JumbotronMiddle diagonalLogo={images.diagonalLogo}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          async defer
+          src="//assets.pinterest.com/js/pinit.js"
+        ></script>
+      </Helmet>
+    </JumbotronMiddle>
     <Footer />
   </Layout>
     )

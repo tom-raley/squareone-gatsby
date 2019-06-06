@@ -16,7 +16,11 @@ class IndexPage extends Component {
     return (
   <Layout>
     <Helmet>
-          <script src="//assets.pinterest.com/js/pinit.js" async=""  ></script>
+          <script
+            type="text/javascript"
+            async defer
+            src="//assets.pinterest.com/js/pinit.js"
+          ></script>
     </Helmet>
     <SEO title="Home" />
     <Navigation logo={images.logoTransparent} />

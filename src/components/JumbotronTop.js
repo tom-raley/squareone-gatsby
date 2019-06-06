@@ -8,7 +8,7 @@ class JumbotronTop extends Component {
   render() {
     const oceanLandscape = this.props.oceanLandscape.childImageSharp.fluid
     return (
-        <BackgroundImage Tag="Jumbotron" style={{ backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', width: '100vw', height: '110vh'}} className="jumbotron-top" fluid={oceanLandscape}>
+        <BackgroundImage Tag="Jumbotron" style={{ backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', width: '100vw', height: '100vh'}} className="jumbotron-top" fluid={oceanLandscape}>
           <div className="hero-text">
             <h1 className="display-4"><span className="square-one-teal">U  </span>ARE <span className="change-text">ONE</span></h1>
             <p className="lead">The future of sustainable living is here.</p>

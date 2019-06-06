@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
 
 class JumbotronMiddle extends Component {
   componentDidMount() {
@@ -18,6 +19,13 @@ class JumbotronMiddle extends Component {
     const diagonalLogo = this.props.diagonalLogo.childImageSharp.fluid
     return (
       <Jumbotron fluid className="jumbotron-middle" id="about">
+        <Helmet>
+          <script
+            type="text/javascript"
+            async defer
+            src="//assets.pinterest.com/js/pinit.js"
+          ></script>
+        </Helmet>
         <h1 className="display-4">ABOUT <span className="square-one-teal">US</span></h1>
         <div className="about-text">
           <div data-aos="fade-right" data-aos-duration="2000" className="about-img">

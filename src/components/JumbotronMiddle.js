@@ -8,11 +8,24 @@ class JumbotronMiddle extends Component {
     const AOS = require('aos');
     this.aos = AOS
     this.aos.init()
+    if (!window.doBuild) {
+      this.preloadWidgetScript();
+    } else {
+      window.doBuild();
+    }
   }
 
   componentDidUpdate() {
     this.aos.init()
     this.aos.refresh()
+  }
+
+  preloadWidgetScript = () => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.dataset.pinBuild = 'doBuild';
+    script.src = '//assets.pinterest.com/js/pinit.js';
+    document.body.appendChild(script);
   }
 
   render() {

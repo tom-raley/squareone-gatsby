@@ -19,17 +19,6 @@ module.exports = {
         logo: "./src/favicon.jpg"
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-          family: `Raleway`,
-          variants: [`400`, `700`]
-          },
-        ],
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

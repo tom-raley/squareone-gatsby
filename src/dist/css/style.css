@@ -5,6 +5,8 @@ html {
 
 html, body {
     font-family: Raleway, sans-serif !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -35,10 +37,8 @@ body {
     margin-top: -175px;
     margin-bottom: 0;
     /* background-image: url("../images/ocean-landscape.jpg"); */
-    
     display: flex;
     justify-content: center;
-    
     text-align: center;
 }
 
@@ -48,7 +48,7 @@ body {
 
 .hero-text h1 {
     animation-name: fadeIn;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
   }
 
@@ -64,9 +64,8 @@ body {
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 3s;
-    animation-delay: 2s;
     animation-fill-mode: forwards;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     border-radius: 5px;
     background-color: #57c8a8;
     border: solid 2px #333;
@@ -125,9 +124,6 @@ body {
 
 /*Mobile Styles*/
 @media only screen and (max-width: 600px) {
-    .jumbotron-top {
-        /* background-image: url("../images/ocean-landscape-mobile.jpg"); */
-    }
 
     .jumbotron-middle {
         height: auto;
@@ -194,12 +190,7 @@ footer {
     color: #333;
 }
 
-.fab {
-    font-size: 2rem;
-    padding: 0 1rem 1rem 1rem;
-    margin-top: -1rem;
-}
-.far {
+.social-logo {
     font-size: 2rem;
     padding: 0 1rem 1rem 1rem;
     margin-top: -1rem;
@@ -237,5 +228,6 @@ footer {
 
     .dev-shout-out {
         color: rgba(3, 3, 3, 0.5);
+        font-size: 1rem;
     }
 }

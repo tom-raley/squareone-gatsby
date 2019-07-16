@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { FaTwitterSquare, FaFacebookSquare, FaInstagram,  FaEnvelope} from 'react-icons/fa'
 
 class Footer extends Component {
   render() {
@@ -14,10 +15,10 @@ class Footer extends Component {
           </div>
         </div>
         <div className="social-icons">
-          <a href="https://www.facebook.com/squareoneventuresllc" rel="noopener noreferrer" target="_blank"><i className="fab fa-facebook-square"></i></a>
-          <a href="https://www.instagram.com/square1mission/" rel="noopener noreferrer" target="_blank"><i className="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/Square1Mission" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
-          <a href="mailto:nicole@squareonemission.com" rel="noopener noreferrer"><i className="far fa-envelope"></i></a>
+          <a href="https://www.facebook.com/squareoneventuresllc" rel="noopener noreferrer" target="_blank" className="social-logo"><FaFacebookSquare size={32} /></a>
+          <a href="https://www.instagram.com/square1mission/" rel="noopener noreferrer" target="_blank" className="social-logo"><FaInstagram size={32} /></a>
+          <a href="https://twitter.com/Square1Mission" target="_blank" rel="noopener noreferrer" className="social-logo"><FaTwitterSquare size={32} /></a>
+          <a href="mailto:nicole@squareonemission.com" rel="noopener noreferrer" className="social-logo"><FaEnvelope size={32} /></a>
         </div>
         <div>
           <a className="dev-shout-out" href="https://tomraley.dev" rel="noopener noreferrer" target="_blank">&copy; tomraley design & dev</a>

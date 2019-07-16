@@ -1,27 +1,18 @@
 import React, { Component } from "react"
 import { graphql } from 'gatsby'
-
-import Helmet from "react-helmet"
 import JumbotronTop from '../components/JumbotronTop'
 import JumbotronMiddle from '../components/JumbotronMiddle'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-
+require('typeface-raleway')
 
 class IndexPage extends Component {
   render() {
     const images = this.props.data;
     return (
   <Layout>
-    <Helmet>
-          <script
-            type="text/javascript"
-            async defer
-            src="//assets.pinterest.com/js/pinit.js"
-          ></script>
-    </Helmet>
     <SEO title="Home" />
     <Navigation logo={images.logoTransparent} />
     <JumbotronTop oceanLandscape={images.oceanLandscape} />

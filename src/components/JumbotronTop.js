@@ -5,17 +5,6 @@ import { Link } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 
 class JumbotronTop extends Component {
-
-  componentDidMount() {
-    const AOS = require('aos');
-    this.aos = AOS
-    this.aos.init()
-  }
-
-  componentDidUpdate() {
-    this.aos.refresh()
-  }
-
   render() {
     const oceanLandscape = this.props.oceanLandscape.childImageSharp.fluid
     return (

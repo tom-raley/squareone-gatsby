@@ -4,19 +4,11 @@ import Img from 'gatsby-image'
 
 class JumbotronMiddle extends Component {
   componentDidMount() {
-    const AOS = require('aos');
-    this.aos = AOS
-    this.aos.init()
     if (!window.doBuild) {
       this.preloadWidgetScript();
     } else {
       window.doBuild();
     }
-  }
-
-  componentDidUpdate() {
-    this.aos.init()
-    this.aos.refresh()
   }
 
   preloadWidgetScript = () => {

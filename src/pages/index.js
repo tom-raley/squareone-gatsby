@@ -9,6 +9,16 @@ import SEO from "../components/seo"
 require('typeface-raleway')
 
 class IndexPage extends Component {
+  componentDidMount() {
+    const AOS = require('aos');
+    this.aos = AOS
+    this.aos.init()
+  }
+
+  componentDidUpdate() {
+    this.aos.refresh()
+  }
+  
   render() {
     const images = this.props.data;
     return (

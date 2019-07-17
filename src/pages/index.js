@@ -17,7 +17,7 @@ class IndexPage extends Component {
     <Navigation logo={images.logoTransparent} />
     <JumbotronTop oceanLandscape={images.oceanLandscape} />
     <JumbotronMiddle diagonalLogo={images.diagonalLogo} />
-    <Footer />
+    <Footer logo={images.logoTransparent} />
   </Layout>
     )
   }
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
   }
   logoTransparent:file (relativePath:{eq:"logo-transparent.png"}) {
     childImageSharp {
-      fluid(maxWidth:1500) {
+      fluid(maxWidth:166) {
         ...GatsbyImageSharpFluid
       }
     }

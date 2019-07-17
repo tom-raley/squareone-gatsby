@@ -18,25 +18,12 @@ body {
     color: #57c8a8;
 }
 
-/*Jumbotron animation*/
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-        top: 0px;
-    }
-    to{
-        opacity: 1;
-        top:-5px;
-    }
-}
-
 /*Top Jumbotron Styles*/
 .jumbotron-top {
     width: 100%;
     height: 100vh;
     margin-top: -175px;
     margin-bottom: 0;
-    /* background-image: url("../images/ocean-landscape.jpg"); */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -46,25 +33,7 @@ body {
   padding-top: 11em;
 }
 
-.hero-text h1 {
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-  }
-
-.hero-text p {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
 .btn.btn-square-one {
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
     color: rgba(255, 255, 255, 0.95);
     border-radius: 5px;
     background-color: #57c8a8;

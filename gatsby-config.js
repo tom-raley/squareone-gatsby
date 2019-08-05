@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Square One Ventures LLC`,
     description: `We design one-of-a-kind, eco-friendly, reusable and sustainable products. From sandwich bags, to snack bags, simplicity, safety and superior durability are featured in high quality materials and craftsmanship.`,
-    author: `Tom Raley`,
+    author: `tom raley design & dev`,
+    siteUrl: `https://squareonemission.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,6 +22,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

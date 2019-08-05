@@ -23,7 +23,7 @@ class IndexPage extends Component {
     const images = this.props.data;
     return (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Square One Mission Eco-Friendly Reusable Sandwich Bags" />
     <Navigation logo={images.logoTransparent} />
     <JumbotronTop oceanLandscape={images.oceanLandscape} />
     <JumbotronMiddle diagonalLogo={images.diagonalLogo} />
